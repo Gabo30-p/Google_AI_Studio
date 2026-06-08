@@ -1,0 +1,6 @@
+{
+  "name": "MIT Beer Distribution Game",
+  "description": "A fully functional educational supply chain simulation demonstrating the Bullwhip Effect.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
