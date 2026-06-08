@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MIT Beer Distribution Game - Simulador de Cadena de Suministro</title>
+  <title>MIT Juego Empresarial - Simulador de Cadena de Suministro</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,7 +69,7 @@
           SCM
         </div>
         <div>
-          <h1 class="text-base font-display font-bold tracking-tight text-white light:text-slate-900">MIT Beer Game</h1>
+          <h1 class="text-base font-display font-bold tracking-tight text-white light:text-slate-900">MIT Juego Empresarial</h1>
           <p class="text-[11px] text-neutral-450 dark:text-neutral-450 light:text-slate-500">Simulador de Optimización &amp; Efecto Látigo</p>
         </div>
       </div>
@@ -135,7 +135,7 @@
           </span>
           <div>
             <h3 class="font-display font-bold text-sm text-white light:text-slate-900">Demora de Envío Físico</h3>
-            <p class="text-xs text-neutral-400 light:text-slate-550 mt-1 leading-relaxed">Las entregas físicas de cerveza tardan 2 semanas en completarse hacia el receptor.</p>
+            <p class="text-xs text-neutral-400 light:text-slate-550 mt-1 leading-relaxed">Las entregas físicas tardan 2 semanas en completarse hacia el receptor.</p>
           </div>
         </div>
         <div class="glass-card p-5 rounded-2xl flex items-start space-x-4">
@@ -162,7 +162,7 @@
         </div>
 
         <div class="space-y-3">
-          <label class="text-xs font-semibold text-neutral-300 light:text-slate-700 block">1. Selecciona tu Rol Operativo (El simulador automatizará los otros echelenos)</label>
+          <label class="text-xs font-semibold text-neutral-300 light:text-slate-700 block">1. Selecciona tu Rol Operativo (El simulador automatizará los otros eslabones)</label>
           <div class="grid grid-cols-2 lg:grid-cols-4 gap-4" id="role-cards-container">
             <!-- Retailer -->
             <button onclick="selectSetupRole('Minorista')" id="card-Minorista" class="role-card border-2 border-neutral-850 p-4 rounded-2xl text-left hover:border-amber-500 hover:bg-neutral-900/30 transition flex flex-col justify-between h-32">
@@ -193,7 +193,7 @@
               <span class="text-amber-550 font-display text-[9px] tracking-wider uppercase font-bold">Eslabón 1</span>
               <div>
                 <h4 class="font-display font-bold text-sm text-white light:text-slate-900">Fábrica</h4>
-                <p class="text-[10px] text-neutral-450 light:text-slate-500 leading-tight mt-0.5">Genera producción de cerveza en lotes comerciales.</p>
+                <p class="text-[10px] text-neutral-450 light:text-slate-500 leading-tight mt-0.5">Genera producción de unidades en lotes comerciales.</p>
               </div>
             </button>
           </div>
@@ -415,9 +415,9 @@
         <div class="bg-gradient-to-br from-amber-600/90 to-amber-500 text-black rounded-3xl p-6 shadow-xl flex flex-col justify-between space-y-4">
           <div class="space-y-2">
             <span class="text-[9px] bg-white/20 border border-white/25 px-2 py-0.5 rounded font-bold uppercase tracking-widest inline-block">Terminal de Decisiones</span>
-            <h3 class="text-xl font-display font-extrabold text-black">Ajustar Pedido de Cerveza</h3>
+            <h3 class="text-xl font-display font-extrabold text-black">Ajustar Pedido de unidades</h3>
             <p class="text-xs text-amber-950 font-medium leading-normal">
-              ¿Cuántas unidades de cerveza deseas solicitar a tu proveedor de la cadena para asegurar el balance de inventario?
+              ¿Cuántas unidades deseas solicitar a tu proveedor de la cadena para asegurar el balance de inventario?
             </p>
           </div>
 
@@ -654,7 +654,7 @@ Información del Estado Actual:
 - Envíos Recibidos esta Semana: ${incomingShipment} unidades
 - Pedidos Recibidos de tu Cliente esta Semana: ${customerOrder} unidades
 
-Por favor decide cuántas unidades de cerveza vas a pedir a tu proveedor aguas arriba esta semana. Ten presente que las demoras de despacho y comunicación física demoran 2 semanas cada una.
+Por favor decide cuántas unidades vas a pedir a tu proveedor esta semana. Ten presente que las demoras de despacho y comunicación física demoran 2 semanas cada una.
 
 DEBES responder exclusivamente con la estructura formato JSON crudo idéntica a:
 {"order": tipo_integer}
